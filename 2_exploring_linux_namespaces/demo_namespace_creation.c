@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <signal.h>
 
 #define STACK_SIZE (1024 * 1024) // Stack size for child process
 
@@ -29,3 +30,23 @@ int main()
     printf("Namespace test complete.\n");
     return 0;
 }
+
+/*
+Steps to run:
+1. Compile the program:
+    $ gcc demo_namespace_creation.c -Wall -Wextra
+    $ sudo ./a.out
+*/
+
+/*
+Output:
+[sudo] password for hardik:
+Creating a new namespace...
+Child process in new namespace.
+root@hardik-laptop:/home/hardik/LI-EL---Security-Features-in-Linux-Kernel/2_exploring_linux_namespaces# ls
+a.out  create_and_explore_namespace.sh  demo_namespace_creation.c
+root@hardik-laptop:/home/hardik/LI-EL---Security-Features-in-Linux-Kernel/2_exploring_linux_namespaces# ^C
+root@hardik-laptop:/home/hardik/LI-EL---Security-Features-in-Linux-Kernel/2_exploring_linux_namespaces# exit
+exit
+Namespace test complete.
+*/
