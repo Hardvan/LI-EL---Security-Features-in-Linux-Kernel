@@ -1,3 +1,5 @@
+# Run: ./create_and_explore_namespace.sh
+
 # --------------------------------------------
 # Step 1: Create a new network namespace
 # --------------------------------------------
