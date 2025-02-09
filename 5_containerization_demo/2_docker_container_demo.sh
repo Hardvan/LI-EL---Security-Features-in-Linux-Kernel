@@ -1,4 +1,4 @@
-#!/bin/bash
+# Run: sudo ./2_docker_container_demo.sh
 # Description:
 #   This script automates the process of building a Docker image,
 #   running a container, executing a command inside it, and cleaning up.
