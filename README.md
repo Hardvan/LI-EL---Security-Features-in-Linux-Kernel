@@ -14,3 +14,8 @@ SELinux Policy Management Example
 
 Simulating a Privilege Escalation Attempt
 Stress Test for Namespaces
+
+## 4. Containerization Demo
+
+Mini Container
+Docker Container Demo
